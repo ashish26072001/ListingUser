@@ -14,7 +14,7 @@ export default function ({users}) {
         }
 
     }
-    console.log(sortUser)
+    
 
 
    
@@ -42,10 +42,12 @@ export default function ({users}) {
     <table>
       
       <tr>
+      <th>Id</th>
     <th>Name</th>
     <th>username</th>
     <th>Email</th>
     <th>Website</th>
+    <th>Phone no</th>
     
 
   </tr>
@@ -53,10 +55,12 @@ export default function ({users}) {
          {sort? sortUser.filter((user)=>user.name.toLowerCase().includes(query)).map(n => (
             
           <tr key={n.id}>
+            <td>{n.id}</td>
             <td>{n.name}</td>
             <td>{n.username}</td>
             <td>{n.email}</td>
             <td>{n.website}</td>
+            <td>{n.phone}</td>
           </tr>
           
           
@@ -64,10 +68,12 @@ export default function ({users}) {
         )):users.filter((user)=>user.name.toLowerCase().includes(query)).map(n => (
             
             <tr key={n.id}>
+                <td>{n.id}</td>
               <td>{n.name}</td>
               <td>{n.username}</td>
               <td>{n.email}</td>
               <td>{n.website}</td>
+              <td>{n.phone}</td>
             </tr>
             
           ))
