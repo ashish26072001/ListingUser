@@ -21,7 +21,8 @@ export default function ({users}) {
 
     }
     const handleOnClick=()=>{
-        setQuery(searchdata);
+        if(searchdata){
+        setQuery(searchdata)}else{setQuery('')}
         window.localStorage.setItem("recent",searchdata);
         setSearchHistory(false)
 
