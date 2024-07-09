@@ -25,9 +25,38 @@ h1{
 .search{
   width: 200px;
   height: 30px;
+  position: relative;
 }
 .select{
   margin-top: 10px;
   width: 130px;
   height: 20px;
+}
+.upperdiv{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+
+}
+.searchbutton{
+  text-align: center;
+  display: flex;
+}
+button{
+  width:100px
+  
+}
+.searchhistory{
+  position:absolute;
+  color: black;
+  background-color: white;
+  border: 0px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  width: 150px;
+  text-align: center;
+  left: 640px;
+  border-style: solid;
 }
